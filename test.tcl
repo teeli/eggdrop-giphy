@@ -127,8 +127,10 @@ source $scriptname
 # TESTS GO HERE
 pub "!giphy"
 after 1000
-pub "!giphy" "hockey"
+pub "!giphy" "ice hockey fight"
 after 1000
 pub ".giphy" "arnold schwarzenegger"
 after 1000
 pub ".giphy" "i'm bored"
+after 1000
+pub ".giphy" "heavy metal"
