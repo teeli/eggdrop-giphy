@@ -30,6 +30,8 @@ namespace eval Giphy {
   # BINDS
   bind pub - .giphy Giphy::handler
   bind pub - !giphy Giphy::handler
+  bind pub - !gif Giphy::handler
+  bind pub - .gif Giphy::handler
   setudef flag giphy               ;# Channel flag to enable script.
 
   # INTERNAL
