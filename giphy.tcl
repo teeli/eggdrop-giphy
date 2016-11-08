@@ -28,7 +28,8 @@ namespace eval Giphy {
   set apiKey "dc6zaTOxFJmzC"
 
   # BINDS
-  bind pubm "-|-" {[!.]giphy} Giphy::handler
+  bind pub - .giphy Giphy::handler
+  bind pub - !giphy Giphy::handler
   setudef flag giphy               ;# Channel flag to enable script.
 
   # INTERNAL
