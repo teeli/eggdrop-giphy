@@ -125,10 +125,10 @@ proc dcc {cmd {value ""}} {
 source $scriptname
 
 # TESTS GO HERE
-pubm "!giphy"
+pub "!giphy"
 after 1000
-pubm "!giphy hockey"
+pub "!giphy" "hockey"
 after 1000
-pubm ".giphy arnold schwarzenegger"
+pub ".giphy" "arnold schwarzenegger"
 after 1000
-pubm ".giphy i'm bored"
+pub ".giphy" "i'm bored"

@@ -49,9 +49,7 @@ namespace eval Giphy {
     set unixtime [clock seconds]
 
     if {[channel get $chan giphy] && ($unixtime - $delay) > $last && (![matchattr $user $ignore])} {
-      # substring from 7 to [some large number]
-      set query [string range $text 7 1024]
-      set gifUrl [Giphy::callApi $query]
+      set gifUrl [Giphy::callApi $text]
       if {$gifUrl != ""} {
         putserv "PRIVMSG $chan $gifUrl"
       }
